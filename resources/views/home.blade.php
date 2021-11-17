@@ -13,7 +13,7 @@
         <div class="second-container"> 
             <img src="{{$food['picture_url']}}" alt="Nasi Goreng"> <br>
             <b><a href="detail/{{$food['id']}}"> {!!  $food['title'] !!} </a></b> <br>
-            {!! $food['base_price'] !!} <br>
+            Rp{!! $food['base_price'] !!},- <br>
         </div>
         @endforeach
     </div>

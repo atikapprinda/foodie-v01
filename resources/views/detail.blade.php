@@ -1,8 +1,14 @@
-<img src="{{$food['picture_url']}}"> 
-<h2>{!! $food['title'] !!} </h2>
-<h4>{!! $food['base_price'] !!}</h4>
-{!! $food['description'] !!} <hr>
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
 
-{!! implode(', ', $food['categories']) !!}; <br>
+<section class="catalog">
+    <div class="main-container detail">
+        <img src="{{$food['picture_url']}}"> 
+        <h2>{!! $food['title'] !!} </h2>
+        <h4>Rp{!! $food['base_price'] !!},- </h4>
+        {!! $food['description'] !!} <hr>
 
-<a href="/">Back to menu</a>
+        <b>Category:</b> {!! implode(', ', $food['categories']) !!}; <br>
+
+        <a href="/">Back to menu</a>
+    </div>
+</section>
